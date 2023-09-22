@@ -12,4 +12,4 @@ total_tip = bill_float * tip_int/100
 #calculate per person bill
 per_person_bill = (bill_float + total_tip)/people_int 
 
-print(f"Each person should pay: {round(per_person_bill, 2)}")
+print(f"Each person should pay: ${round(per_person_bill, 2)}")
