@@ -11,5 +11,7 @@ tip_int = int(tip_percent)
 total_tip = bill_float * tip_int/100
 #calculate per person bill
 per_person_bill = (bill_float + total_tip)/people_int 
+#final_amount = round(per_person_bill, 2)
+final_amount = "{:.2f}".format(per_person_bill)
 
-print(f"Each person should pay: ${round(per_person_bill, 2)}")
+print(f"Each person should pay: ${final_amount}")
