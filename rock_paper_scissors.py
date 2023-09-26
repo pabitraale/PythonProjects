@@ -46,9 +46,7 @@ else:
     else:
         print(scissors)
 
-    if your_num > 2 or your_num < 0:
-        print("Invalid input. You lose")
-    elif your_num == 0 and computer_num == 2:
+    if your_num == 0 and computer_num == 2:
         print("You win!")
     elif your_num == 2 and computer_num == 0:
         print("You lose")
