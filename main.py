@@ -25,9 +25,13 @@
 # print(names)
 # print(type(names))
 
-fruits = ["apple", "peach", "pear"]
+# fruits = ["apple", "peach", "pear"]
+# for fruit in fruits:
+#   print(fruit)
+# print(fruit)
 
-for fruit in fruits:
-  print(fruit)
-print(fruit)
+def my_function():
+  print("Hello")
+my_function()
+
 
