@@ -1,0 +1,6 @@
+encode_or_decode = input("Type 'encode' to encrypt, type 'decode' to decrypt: ").lower()
+print(encode_or_decode)
+message = input("What is your message: ").lower()
+print(message)
+shift_number = int(input("What number you want to shift: "))
+print(shift_number)
