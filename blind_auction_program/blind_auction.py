@@ -23,7 +23,6 @@ while boolean_flag:
     name = input("What is your name?:")
     bid_amt = int(input("What's your bid?: $"))
     bidder[name] = bid_amt
-    print(bidder)
     other_bidder = input("Are there any other bidders? Type 'yes' or 'no'.")
 
     if other_bidder == "yes":
