@@ -143,9 +143,60 @@ final_dictionary = {
 }
 print(starting_dictionary)
 starting_dictionary["c"] = 7
-print(starting_dictionary)'''
+print(starting_dictionary)
 
-
+#Functions with outputs
+def format_name(f_name, l_name):
     
+    first_name = f_name[0].upper()
+    for i in range(1, len(f_name)):
+        first_name += f_name[i].lower()
+    
+    last_name = l_name[0].upper()
+    for i in range(1, len(l_name)):
+        last_name += l_name[i].lower()
+    print(f"{first_name} {last_name}")
         
-       
+format_name("pABITRA", "aLE")       
+#title case
+def format_name_usingTitle(f_name, l_name):
+
+    print(f"{f_name.title()} {l_name.title()}")
+
+format_name_usingTitle("pABITRA", "aLE") 
+
+def format_name_titleCase(f_name, l_name):
+    formated_f_name = f_name.title()
+    formated_l_name = l_name.title()
+
+    return f"{formated_f_name} {formated_l_name}"
+
+name = format_name_titleCase("pABITRA", "aLE") 
+print(name)
+
+#function with more than one return
+def format_name_titleCase(f_name, l_name):
+    if f_name == "" or l_name == "":
+        return "You didn't provide valid inputs."
+    formated_f_name = f_name.title()
+    formated_l_name = l_name.title()
+
+    return f"{formated_f_name} {formated_l_name}"
+
+name = format_name_titleCase(input("What is your first name?"), input("What is your last name?")) 
+print(name)
+
+#Docstrings
+def format_name_titleCase(f_name, l_name):
+    """Take a first and last name  and format it 
+    to return the title case version of the name."""
+    if f_name == "" or l_name == "":
+        return "You didn't provide valid inputs."
+    formated_f_name = f_name.title()
+    formated_l_name = l_name.title()
+
+    return f"{formated_f_name} {formated_l_name}"
+
+name = format_name_titleCase(input("What is your first name?"), input("What is your last name?")) 
+print(name)'''
+
