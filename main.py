@@ -199,7 +199,7 @@ def format_name_titleCase(f_name, l_name):
 
 name = format_name_titleCase(input("What is your first name?"), input("What is your last name?")) 
 print(name)'''
-import random
+'''import random
 from replit import clear
 
 def deal_card():
@@ -274,7 +274,46 @@ play_blackjack()
 play_again = input("Do you want to play again? Type 'yes' or 'no': ")
 if play_again == 'yes'.lower():
     clear()
-    play_blackjack()
+    play_blackjack()'''
+
+import random
+print("Welcome to the Number Guessing Game!")
+print("I'm thinking of a number between 1 and 100.")
+random_num = random.randint(1, 100)
+print(f"The number is: {random_num}")
+choosen_level = input("Choose a difficult. Type 'easy' or 'hard':")
+
+    
+if choosen_level == "easy":
+    number_of_attempt = 8
+else:
+    number_of_attempt = 5
+
+print(f"You have {number_of_attempt} attempts remaining to guess the number.")
+
+while number_of_attempt > 0:
+    guess_number = int(input("Make a guess: "))
+    
+    if random_num == guess_number:
+        print(f"You got it! The answer was {guess_number}.")
+        number_of_attempt = 0
+    elif guess_number > random_num:
+        print("Too high.")
+        number_of_attempt -= 1
+        print("Guess again.")
+        print(f"You have {number_of_attempt} attempts remaining to guess the number.")
+    else:
+        print("Too low.")
+        number_of_attempt -= 1
+        print("Guess again.")
+        print(f"You have {number_of_attempt} attempts remaining to guess the number.")
+    
+    
+    
+    
+    
+
+
 
 
     
