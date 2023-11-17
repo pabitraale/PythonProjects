@@ -24,8 +24,10 @@ data1 = get_random_data(get_data)  #get first data
 while wrong_score  < 1: 
     print(f"Compare A: {data1['name']}, {data1['description']}, from {data1['country']}.")
     print(vs)
-    
-    data2 = get_random_data(get_data)    
+    data2 = get_random_data(get_data) 
+    if data1 == data2:
+        data2 = get_random_data(get_data) 
+       
     print(f"Against B: {data2['name']}, {data2['description']}, from {data2['country']}.")
     
     has_more_follower = compare_follower(data1['follower_count'], data2['follower_count'])
